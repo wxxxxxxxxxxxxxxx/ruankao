@@ -23,7 +23,8 @@ $$ 总线传输速率 = {时钟频率(Mhz)\over 每个总线包含的时钟周�
 #### 十二. 网络流量与差错控制技术，最高链路利用率
 - ##### X.25公共数据网
 	- 停等协议
-		- 发送一帧的时间 $$ T_{FA} = 2t_p + t_f \tag{12.1} $$
+		- 发送一帧的时间 
+  			$$ T_{FA} = 2t_p + t_f \tag{12.1} $$
 			- $t_p$为传播延迟
 			- $t_f$为发送一帧的时间（一帧时）
 		- 线路利用率 $$ E = {t_f\over 2t_p+t_f}\tag{12.2}$$
@@ -50,16 +51,21 @@ $$ 总线传输速率 = {时钟频率(Mhz)\over 每个总线包含的时钟周�
 		- 约定速率测量时间（$T_c$）-->测量$B_c和B_e$的间隔
 #### 十三.  CSMA/CD 常用计算公式
 - 冲突检测
-	- 最小帧长$$L_{min}=2R*d/v$$
-- 二进程指数后退算法 (后退时延）$$\left\{\begin{aligned} &\xi=random[0,2^n] \\ &t_\xi=\xi\tau \end{aligned}\right. \tag{13.1}$$
+	- 最小帧长 
+		$$L_{min}=2R*d/v $$
+- 二进程指数后退算法 (后退时延）
+  	$$\left\{\begin{aligned} &\xi=random[0,2^n] \\ &t_\xi=\xi\tau \end{aligned}\right. \tag{13.1}$$
 - ##### CSMA/CD协议的性能分析
-	- 最大吞吐率$$T={1\over t_p+t_f}={L\over d/v +L/R}\tag{13.2}$$
+	- 最大吞吐率
+  		$$T={1\over t_p+t_f}={L\over d/v +L/R}\tag{13.2}$$
 		- 长度L的帧周期$t_p+t_f$
-		- d-->网段长度
-		- v-->信号在铜线中的传播速度（光速的65%~77%）
-		- R-->网络提供的数据速率（网络容量）
-	- 网络利用率 $$E={T\over R}={L/R\over d/v+L/R}={t_f\over t_p+t_f}\tag{13.3}$$
-	- 利用$a={t_p/t_f}\tag{13.4}$$$E={1\over a+1}\tag{13.4}$$
+		- $d$-->网段长度
+		- $v$-->信号在铜线中的传播速度（光速的65%~77%）
+		- $R$-->网络提供的数据速率（网络容量）
+	- 网络利用率 
+		$$E={T\over R}={L/R\over d/v+L/R}={t_f\over t_p+t_f}\tag{13.3}$$
+	- 利用 $a={t_p/t_f}$ 
+  		$$E={1\over a+1}\tag{13.4}$$
 - ##### 高速以太网*详见p115*
 	- 快速以太网（FastEthernet）$$slot≈2s/0.7C+2t_{phy}\tag{13.5}$$
 		- 其冲突时槽为5.12μs
@@ -125,10 +131,14 @@ $$ 总线传输速率 = {时钟频率(Mhz)\over 每个总线包含的时钟周�
 		- $$m+k+1 < 2^k$$
 	- **循环冗余校验码（Cyclic Redundancy Check）-->CRC**-->详见*p53*
 		- CRC生成的多项式的国际标准
-			- $CRC- CCITT$ $$G(x)=x^{16}+x^{12}+x^5+1$$
-			- $CRC-16$ $$G(x)=x^{16}+x^{15}+x^2+1$$
-			- $CRC-12$ $$G(x)=x^{12}+x^{11}+x^3+x^2+x+1$$
-			- $CRC-32$ $$G(x)=x^{32}+x^{26}+x^{23}+x^{22}+x^{16}+x^{12}+x^{11}+x^{10}+x^{8}+x^7+x^5x^4+x^2+x+1$$
+			- $CRC- CCITT$ 
+  				 $$G(x)=x^{16}+x^{12}+x^5+1$$
+			- $CRC-16$ 
+				 $$ G(x)=x^{16}+x^{15}+x^2+1 $$
+			- $CRC-12$ 
+        		 $$G(x)=x^{12}+x^{11}+x^3+x^2+x+1$$
+			- $CRC-32$ 
+				 $$G(x)=x^{32}+x^{26}+x^{23}+x^{22}+x^{16}+x^{12}+x^{11}+x^{10}+x^{8}+x^7+x^5x^4+x^2+x+1$$
 #### 二十五. 交换方式传输时间 
 #### 二十六. 差错控制
 #### 二十七. 网络评价
@@ -137,12 +147,14 @@ $$ 总线传输速率 = {时钟频率(Mhz)\over 每个总线包含的时钟周�
 #### 二十九. 无线通信网
 - ##### 移动Ad Hoc网络
 	- 目标节点更新路由的平均时间间隔(平均定制时间AST）
-		- DSDV（Destination-Sequenced Distance Vector）目标排序的距离矢量$$AST_n={2LST+AST_{n-1}\over 3}$$
+		- DSDV（Destination-Sequenced Distance Vector）目标排序的距离矢量 
+  			$$AST_n={2LST+AST_{n-1}\over 3}$$
 		- LST（Last Setting Time）最近一次更新路由的时间间隔
 - ##### ZigBee网络
 	- 通路费用-->*详见p180*$$C\left\{P \right\}=\sum\limits_{i=1}^{m}C\left\{[D_i,D_{i+1}]\right\}$$
 		- 其中$C\left\{[D_i,D_{i+1}]\right\}$-->表示链路费用
-		- 链路l的费用用$C\left\{l \right\}$用下面函数计算：$$\left\{\begin{aligned}&7,\\ &C\left\{l \right\}=min\left(7,round\left(\frac{1}{P_l^4}\right)\right)\end{aligned}\right.$$
+		- 链路l的费用用$C\left\{l \right\}$用下面函数计算：
+  			$$\left\{\begin{aligned}&7,\\ &C\left\{l \right\}=min\left(7,round\left(\frac{1}{P_l^4}\right)\right)\end{aligned}\right.$$
 			- $p_l$表示在链路l上可进行分组提交的概率
 #### 三十.网络互连与互联网
 - ##### TCP拥塞控制
@@ -161,16 +173,19 @@ $$ 总线传输速率 = {时钟频率(Mhz)\over 每个总线包含的时钟周�
 			- credit: 最近一次确认报文中得到的信息量
 #### 三十. 网络安全
 - ##### 信息加密技术
-	- ####### 数据加密原理
-		- 发送端$$C=E(K,P)$$
+	- ###### 数据加密原理
+		- 发送端
+			 $$C=E(K,P)$$
 			- 明文P用加密算法E和密钥K加密，变换成密文C
 		- 接收端$$P=D(K,C)$$
 			- 利用解密算法D和密钥K对C解密得到明文P
 	- 流加密算法和RC4 -->*详见p311*
-		- 加密$$C=P\bigoplus KS(K)$$
+		- 加密
+  			 $$C=P\bigoplus KS(K)$$
 			1. 利用密钥K生成一个密钥流KS（伪随机序列）
 			2. 用密钥流KS与明文P进行“异或"计算，产生密文C
-		- 解密$$P=C\bigoplus KS(K)$$
+		- 解密
+			 $$P=C\bigoplus KS(K)$$
 			- 用密钥流与密文C进行异或运算，产生明文P
 		- **为了安全，对不同的明文必须使用不同的密钥流，否则容易被破解**
 	- RSA（Rivest Shamir and Adleman)算法
