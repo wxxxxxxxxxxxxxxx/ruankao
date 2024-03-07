@@ -170,7 +170,7 @@ $$ 总线传输速率 = {时钟频率(Mhz)\over 每个总线包含的时钟周�
 			- $p_l$表示在链路l上可进行分组提交的概率
     	- test 
         	
-        	- $$ \left\lbrace\begin{cases}0& \text{x=0}\\1& \text{x!=0}\end{cases}\right.$$
+        	- $$ \left\lbrace\begin{cases}0& \text{x=0}\newline 1& \text{x!=0}\end{cases}\right.$$
       	- test_II
         	- $$\left\lbrace\frac{x^2}{y^3}\right\rbrace$$
       	- test_III
