@@ -161,10 +161,16 @@ $$ 总线传输速率 = {时钟频率(Mhz)\over 每个总线包含的时钟周�
 - ##### ZigBee网络
 	- 通路费用-->*详见p180*
 		$$C\left\{P \right\}=\sum\limits_{i=1}^{m}C\left\{[D_i,D_{i+1}]\right\}$$
-		- 其中 $C\left\{[D_i,D_{i+1}]\right\}$ -->表示链路费用
-		- 链路l的费用用$C\left\{l \right\}$用下面函数计算：
-  			$$ \[\begin{cases}7,\\ &C\left\{l \right\}=min\left(7,round\left(\frac{1}{P_l^4}\right)\right)\end{cases} \ $$
+		- 其中 (表示链路费用)
+			$$ C\left\{[D_i,D_{i+1}]\right\}$$
+		- 链路$l$的费用
+			$$C\left\{l \right\}$$
+			用下面函数计算：
+  			$$ \begin{cases}7,\\C \left\{{l}\right\} = min\left((7, round (\frac{1}{P_l^4})\right)\end{cases}$$
 			- $p_l$表示在链路l上可进行分组提交的概率
+    	- test 
+        	
+        	- $$ \begin{cases}0& \text{x=0}\\1& \text{x!=0}\end{cases}$$
 #### 三十.网络互连与互联网
 - ##### TCP拥塞控制
 	- 重传计时器管理-->*详见p209*  
