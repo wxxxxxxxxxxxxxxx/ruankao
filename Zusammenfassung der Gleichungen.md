@@ -163,7 +163,7 @@ $$ 总线传输速率 = {时钟频率(Mhz)\over 每个总线包含的时钟周�
 		$$C\left\{P \right\}=\sum\limits_{i=1}^{m}C\left\{[D_i,D_{i+1}]\right\}$$
 		- 其中$C\left\{[D_i,D_{i+1}]\right\}$-->表示链路费用
 		- 链路l的费用用$C\left\{l \right\}$用下面函数计算：
-  			$$ \left\{\begin{cases}7,\\ &C\left\{l \right\}=min\left(7,round\left(\frac{1}{P_l^4}\right)\right)\end{cases}\right. $$
+  			$$ \[\begin{cases}7,\\ &C\left\{l \right\}=min\left(7,round\left(\frac{1}{P_l^4}\right)\right)\end{cases} \ $$
 			- $p_l$表示在链路l上可进行分组提交的概率
 #### 三十.网络互连与互联网
 - ##### TCP拥塞控制
