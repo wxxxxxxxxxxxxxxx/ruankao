@@ -171,6 +171,8 @@ $$ 总线传输速率 = {时钟频率(Mhz)\over 每个总线包含的时钟周�
     	- test 
         	
         	- $$ \begin{cases}0& \text{x=0}\\1& \text{x!=0}\end{cases}$$
+      	- test_II
+        	- $$\left\{\frac{x^2}{y^3}\right\}$$
 #### 三十.网络互连与互联网
 - ##### TCP拥塞控制
 	- 重传计时器管理-->*详见p209*  
