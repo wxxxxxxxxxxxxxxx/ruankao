@@ -172,7 +172,7 @@ $$ 总线传输速率 = {时钟频率(Mhz)\over 每个总线包含的时钟周�
         	
         	- $$ \begin{cases}0& \text{x=0}\\1& \text{x!=0}\end{cases}$$
       	- test_II
-        	- $$\left\{\frac{x^2}{y^3}\right\}$$
+        	- $$\left\lbrace\frac{x^2}{y^3}\right\rbrace$$
       	- test_III
         	- $$\[ f(n) =
 				\begin{cases}
