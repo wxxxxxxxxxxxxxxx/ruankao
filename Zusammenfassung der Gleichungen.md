@@ -173,6 +173,13 @@ $$ 总线传输速率 = {时钟频率(Mhz)\over 每个总线包含的时钟周�
         	- $$ \begin{cases}0& \text{x=0}\\1& \text{x!=0}\end{cases}$$
       	- test_II
         	- $$\left\{\frac{x^2}{y^3}\right\}$$
+      	- test_III
+        	- $$\[ f(n) =
+				\begin{cases}
+					n/2       & \quad \text{if } n \text{ is even}\\
+					-(n+1)/2  & \quad \text{if } n \text{ is odd}
+				\end{cases}
+				\]$$
 #### 三十.网络互连与互联网
 - ##### TCP拥塞控制
 	- 重传计时器管理-->*详见p209*  
