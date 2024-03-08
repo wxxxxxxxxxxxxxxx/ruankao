@@ -174,12 +174,7 @@ $$ 总线传输速率 = {时钟频率(Mhz)\over 每个总线包含的时钟周�
       	- test_II
         	- $$\left\lbrace\frac{x^2}{y^3}\right\rbrace$$
       	- test_III
-        	- $$\[ f(n) =
-				\begin{cases}
-					n/2       & \quad \text{if } n \text{ is even}\\
-					-(n+1)/2  & \quad \text{if } n \text{ is odd}
-				\end{cases}
-				\]$$
+        	- $$\left\{\begin{matrix} x=a + r\text{cos}\theta \\  y=b + r\text{sin}\theta \end{matrix}\right. $$
 #### 三十.网络互连与互联网
 - ##### TCP拥塞控制
 	- 重传计时器管理-->*详见p209*  
